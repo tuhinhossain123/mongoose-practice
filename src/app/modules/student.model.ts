@@ -141,4 +141,4 @@ const studentSchema = new Schema<TStudent>({
   },
 });
 
-
+export const Student = model<TStudent>('Student', studentSchema);

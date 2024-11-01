@@ -1,3 +1,8 @@
+export type TUserName = {
+  firstName: string;
+  middleName?: string;
+  lastName: string;
+};
 
 export type TGuardian = {
   father: string;
@@ -6,12 +11,6 @@ export type TGuardian = {
   mother: string;
   motherOccuption: string;
   motherContact: string;
-};
-
-export type TUserName = {
-  firstName: string;
-  middleName?: string;
-  lastName: string;
 };
 
 export type TLocalGuardian = {
@@ -23,11 +22,11 @@ export type TLocalGuardian = {
 
 export type TStudent = {
   id: string;
-  password: string;
   name: TUserName;
   gender: 'male' | 'female' | 'other';
   dateOfBirth?: string;
   email: string;
+  password: string;
   contactNo: string;
   emargencyContact: string;
   bloodGroup?: 'A+' | 'A-' | 'B+' | 'B-' | 'AB+' | 'AB-' | 'O+' | 'O-';

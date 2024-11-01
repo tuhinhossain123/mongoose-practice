@@ -71,10 +71,6 @@ const studentSchema = new Schema<TStudent>({
     type: String,
     required: [true, 'Student ID is required.'],
   },
-  password: {
-    type: String,
-    required: [true, 'Student password is required.'],
-  },
   name: {
     type: userNameSchema,
     required: [true, 'Student name is required.'],
@@ -97,6 +93,10 @@ const studentSchema = new Schema<TStudent>({
   email: {
     type: String,
     required: [true, 'Email address is required.'],
+  },
+  password: {
+    type: String,
+    required: [true, 'Student password is required.'],
   },
   emargencyContact: {
     type: String,

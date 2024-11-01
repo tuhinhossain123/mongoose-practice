@@ -1,4 +1,3 @@
-import { Schema, model, connect, Model } from 'mongoose';
 
 export type TGuardian = {
   father: string;
